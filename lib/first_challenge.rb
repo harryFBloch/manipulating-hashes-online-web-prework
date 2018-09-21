@@ -14,10 +14,24 @@ def first_challenge
   }
 
   #your code here
- flavorArray = contacts["Freddy Mercury"][:favorite_icecream_flavors]
-  flavorArray.delete_if { |flavor| flavor == "strawberry"}
-  #remember to return your newly altered contacts hash!
-  contacts["Freddy Mercury"][:favorite_icecream_flavors] = flavorArray
+ #flavorArray = contacts["Freddy Mercury"][:favorite_icecream_flavors]
+#   flavorArray.delete_if { |flavor| flavor == "strawberry"}
+#   #remember to return your newly altered contacts hash!
+#   contacts["Freddy Mercury"][:favorite_icecream_flavors] = flavorArray
+
+return contacts = {
+    "Jon Snow" => {
+      name: "Jon",
+      email: "jon_snow@thewall.we", 
+      favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"],
+      knows: nil
+    },
+    "Freddy Mercury" => {
+      name: "Freddy",
+      email: "freddy@mercury.com",
+      favorite_icecream_flavors: [ "cookie dough", "mint chip"]
+    }
+  }
 end
 
 first_challenge()
